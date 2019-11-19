@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,8 +11,15 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb2d;
 
+    [SerializeField] private int currentScore;
+    [SerializeField] private Text scoreText;
+    [SerializeField] private int commonFishReward;
+    [SerializeField] private int rareFishReward;
+    [SerializeField] private int veryRareFishReward;
+
     private void Start()
     {
+        currentScore = 0;
         rb2d = GetComponent<Rigidbody2D>();
     }
 
@@ -32,10 +40,35 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.gameObject.CompareTag("Floor"))
         {
             hasJumped = false;
         }
+        else if (other.gameObject.layer == 8)
+        {
+            //common fish
+            currentScore += commonFishReward;
+            UpdateScore();
+        }
+        else if (other.gameObject.layer == 9)
+        {
+            //rare fish
+            currentScore += rareFishReward;
+            UpdateScore();
+        }
+        else if (other.gameObject.layer == 10)
+        {
+            //very rare fish
+            currentScore += veryRareFishReward;
+            UpdateScore();
+        }
+
+    }
+
+    private void UpdateScore()
+    {
+        scoreText.text = "Score = " + currentScore.ToString();
     }
 
 }
