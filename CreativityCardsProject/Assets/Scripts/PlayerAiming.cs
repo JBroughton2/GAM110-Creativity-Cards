@@ -13,6 +13,7 @@ public class PlayerAiming : MonoBehaviour
     public float minRot;
     public float maxRot;
     public PlayerMovement pMove;
+    public AudioSource fuck;
 
     private Vector3 target;
 
@@ -20,6 +21,7 @@ public class PlayerAiming : MonoBehaviour
     private void Start()
     {
         Cursor.visible = false;
+        fuck = GetComponent<AudioSource>();
     }
 
     
@@ -45,10 +47,12 @@ public class PlayerAiming : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            fuck.Play();
             float distance = difference.magnitude;
             Vector2 direction = difference / distance;
             direction.Normalize();
             FireBullet(direction, rotationZ);
+
         }
     }
     void FireBullet(Vector2 direction, float rotationZ)
