@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float jumpY;
     public bool hasJumped = false;
-    private bool facingRight;
+    public bool facingRight;
     public Animator animator;
 
     private Rigidbody2D rb2d;

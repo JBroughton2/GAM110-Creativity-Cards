@@ -46545,6 +46545,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Sprite
       objectReference: {fileID: 0}
+    - target: {fileID: 6160517876530923056, guid: 3edf01807dd97d847a4876f40b4ceda5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6160517876530923083, guid: 3edf01807dd97d847a4876f40b4ceda5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46615,6 +46620,31 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1962973891}
+    - target: {fileID: 6160517875765877530, guid: 3edf01807dd97d847a4876f40b4ceda5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160517875456181575, guid: 3edf01807dd97d847a4876f40b4ceda5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160517874840505965, guid: 3edf01807dd97d847a4876f40b4ceda5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160517874840505954, guid: 3edf01807dd97d847a4876f40b4ceda5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160517874840505954, guid: 3edf01807dd97d847a4876f40b4ceda5,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6160517876530923080, guid: 3edf01807dd97d847a4876f40b4ceda5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3edf01807dd97d847a4876f40b4ceda5, type: 3}

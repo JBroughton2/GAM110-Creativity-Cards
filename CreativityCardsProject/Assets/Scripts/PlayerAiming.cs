@@ -12,6 +12,7 @@ public class PlayerAiming : MonoBehaviour
     public float projectileSpeed;
     public float minRot;
     public float maxRot;
+    public PlayerMovement pMove;
 
     private Vector3 target;
 
@@ -52,6 +53,14 @@ public class PlayerAiming : MonoBehaviour
     }
     void FireBullet(Vector2 direction, float rotationZ)
     {
+        //Vector3 firingDir = direction;
+
+        //if (pMove.facingRight)
+        //{
+
+        //}
+
+
         GameObject proj = Instantiate(projectile, firePoint.transform.position, Quaternion.Euler(0.0f, 0.0f, rotationZ)) as GameObject;
         proj.GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
     }
