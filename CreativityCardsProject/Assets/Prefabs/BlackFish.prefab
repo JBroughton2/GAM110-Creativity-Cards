@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3498451173108991780}
   m_Layer: 0
   m_Name: BlackFish
-  m_TagString: Fish
+  m_TagString: BlackFish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,4 +177,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7796b853fc21f24469bed109ef0a234e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyDelay: 0

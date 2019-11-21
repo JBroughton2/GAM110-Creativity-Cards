@@ -7,6 +7,9 @@ TagManager:
   - Floor
   - Fish
   - Projectile
+  - YellowFish
+  - RedFish
+  - BlackFish
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - PostProcessing
   - 
   - 
   - 

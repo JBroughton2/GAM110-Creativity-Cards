@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 6160517876530923063}
   - component: {fileID: 6160517876530923062}
   - component: {fileID: 6160517876530923057}
-  - component: {fileID: 6160517876530923080}
+  - component: {fileID: 6631189764411536793}
   m_Layer: 0
   m_Name: Player Sprite
   m_TagString: Untagged
@@ -327,7 +327,7 @@ MonoBehaviour:
   projectileSpeed: 15
   minRot: -25
   maxRot: 360
---- !u!114 &6160517876530923080
+--- !u!114 &6631189764411536793
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
