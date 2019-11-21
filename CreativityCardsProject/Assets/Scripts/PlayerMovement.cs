@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = new Vector2(transform.position.x + moveHorizontal, transform.position.y);
 
+        Flip(moveHorizontal);
+
         if (Input.GetKeyDown(KeyCode.Space) && (!hasJumped))
         {
             hasJumped = true;
@@ -45,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("IsJumping", false);
     }
 
-    private void Flip(float moveHorizontal)   //don't uncomment this unless you want to flip and fix the gun sprite as well
+    private void Flip(float moveHorizontal)   //don't uncomment this
     {
         if (moveHorizontal > 0 && !facingRight || moveHorizontal < 0 && facingRight)
         {
