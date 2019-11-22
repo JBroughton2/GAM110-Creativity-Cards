@@ -12,7 +12,6 @@ public class PlayerAiming : MonoBehaviour
     public float projectileSpeed;
     public float minRot;
     public float maxRot;
-    public PlayerMovement pMove;
     public AudioSource fuck;
 
     private Vector3 target;

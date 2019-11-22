@@ -25,10 +25,10 @@ public class FishMoving : MonoBehaviour
     }
     void Update()
     {
-        X1position = Random.Range(-10f, 50f);
-        X2position = Random.Range(-10f, 50f);
-        Y1position = Random.Range(-10f, 20f);
-        Y2position = Random.Range(-10f, 20f);
+        X1position = Random.Range(-5f, 50f);
+        X2position = Random.Range(-5f, 50f);
+        Y1position = Random.Range(-15f, 20f);
+        Y2position = Random.Range(-15f, 20f);
 
         if (Vector2.Distance(transform.position, newPosition) < 1)
             PositionChange();
