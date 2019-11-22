@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class FishMoving : MonoBehaviour
 {
-    public float speed = 1.5f;
-    public float rotateSpeed = 5.0f;
-    public float X1position = -5f;
-    public float X2position = 5.0f;
-    public float Y1position = -5.0f;
-    public float Y2position = 5.0f;
+    public float speed = Random.Range(1f, 5f);
+    public float rotateSpeed = Random.Range(1f, 5f);
+    public float X1position = Random.Range(-15f, 45f);
+    public float X2position = Random.Range(-15f, 45f);
+    public float Y1position = Random.Range(-15f, 45f);
+    public float Y2position = Random.Range(-15f, 45f);
 
     Vector3 newPosition;
 
@@ -25,6 +25,11 @@ public class FishMoving : MonoBehaviour
     }
     void Update()
     {
+        X1position = Random.Range(-10f, 50f);
+        X2position = Random.Range(-10f, 50f);
+        Y1position = Random.Range(-10f, 20f);
+        Y2position = Random.Range(-10f, 20f);
+
         if (Vector2.Distance(transform.position, newPosition) < 1)
             PositionChange();
 
